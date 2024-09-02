@@ -115,35 +115,46 @@ section {
     text-decoration: underline;
 }
 
-/* Projects Section */
-.projects-section {
-    padding: 60px 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.projects-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.projects-section p {
+.message-btn {
+    display: inline-block;
+    background: #00bcd4;
+    color: #fff;
+    padding: 12px 24px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-decoration: none;
     font-size: 1.25rem;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.message-btn:hover {
+    background: #008ba3;
+    transform: scale(1.05);
+}
+
+/* Projects Section */
+.project {
     margin-bottom: 20px;
 }
 
-.project-item {
-    margin-bottom: 20px;
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.project-item a {
+.project p {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.project a {
     color: #00bcd4;
     text-decoration: none;
 }
 
-.project-item a:hover {
+.project a:hover {
     text-decoration: underline;
 }
 
