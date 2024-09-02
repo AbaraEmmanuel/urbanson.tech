@@ -14,4 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
             path: element.dataset.animationPath
         });
     });
+
+    // Dynamic Background Effect
+    document.addEventListener('mousemove', (event) => {
+        const x = (event.clientX / window.innerWidth) * 100;
+        const y = (event.clientY / window.innerHeight) * 100;
+        document.body.style.background = `linear-gradient(${x}deg, #0a192f, #1d2a44)`;
+    });
 });
