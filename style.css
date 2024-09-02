@@ -54,60 +54,107 @@ body {
 }
 
 .cta-button {
-    background: #00bcd4;
+    background: linear-gradient(135deg, #00bcd4, #0097a7);
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    transition: transform 0.3s, background 0.3s;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cta-button:hover {
-    background: #008ba3;
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #0097a7, #00bcd4);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Section Styles */
-section {
-    padding: 60px 20px;
-    color: #ccd6f6;
+/* About Section */
+#about {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .glass-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-card h2 {
+    margin-top: 0;
+    color: #ffcc00;
 }
 
 /* Skills Section */
+#skills {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
 }
 
 .skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s;
+    text-align: center;
+    color: #ffffff;
 }
 
-.skill-item:hover {
-    transform: translateY(-10px);
+.skill-item .lottie {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+#projects {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #ffcc00;
 }
 
 /* Contact Section */
+#contact {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 .contact-links a {
     display: block;
     color: #00bcd4;
-    margin: 5px 0;
+    margin-bottom: 10px;
     text-decoration: none;
 }
 
@@ -117,108 +164,43 @@ section {
 
 .message-btn {
     display: inline-block;
-    background: #00bcd4;
-    color: #fff;
-    padding: 12px 24px;
-    margin: 20px 0;
-    border-radius: 5px;
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.25rem;
-    text-align: center;
     transition: background 0.3s, transform 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .message-btn:hover {
-    background: #008ba3;
+    background: #e64a19;
     transform: scale(1.05);
 }
 
-/* Projects Section */
-.project {
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.project p {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
-
-.project a {
-    color: #00bcd4;
-    text-decoration: none;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-/* Buttons */
-.submit-btn {
-    background-color: #00bcd4;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.submit-btn:hover {
-    background-color: #008ba3;
-}
-
-/* Form Styles */
-.form-container {
-    width: 640px; /* Fixed width for larger screens */
-    height: auto; /* Adjust height based on content */
-    max-height: 717px; /* Limit maximum height */
-    margin: 0 auto; /* Center the form horizontally */
-    padding: 20px; /* Add padding inside the form */
-    box-sizing: border-box; /* Include padding and border in width/height */
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive Adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
         text-align: center;
     }
-
+    
     .profile-pic {
-        margin-bottom: 20px;
+        width: 120px;
+        height: 120px;
     }
-
-    .form-container {
-        width: 90%; /* Adjust width for tablets */
-        max-height: none; /* Remove height restriction for better fit */
-    }
-}
-
-@media (max-width: 480px) {
+    
     .name {
         font-size: 2.5rem;
     }
-
-    .tagline {
-        font-size: 1rem;
-    }
-
+    
     .cta-button {
-        padding: 8px 16px;
+        font-size: 1rem;
+        padding: 10px 20px;
     }
-
-    .form-container {
-        width: 100%; /* Full width for mobile screens */
-        padding: 10px; /* Reduced padding for smaller screens */
-        box-sizing: border-box; /* Ensure padding is included in width */
-        max-height: none; /* Remove height restriction */
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }
