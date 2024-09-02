@@ -1,21 +1,10 @@
-// GSAP for smooth scroll animations
-gsap.registerPlugin(ScrollTrigger);
+// GSAP Animations
 document.addEventListener('DOMContentLoaded', () => {
-    // Vanta.js background effect
-    VANTA.WAVES({
-        el: "#vanta-bg",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x007bff,
-        shininess: 50.00
-    });
+    gsap.from(".name", { duration: 2, y: -100, opacity: 0, ease: "bounce" });
+    gsap.from(".tagline", { duration: 1.5, x: 100, opacity: 0, delay: 1 });
+    gsap.from(".cta-button", { duration: 1, scale: 0.8, opacity: 0, delay: 1.5 });
 
-    // Initialize Lottie animations
+    // Initialize Lottie Animations
     document.querySelectorAll('.lottie').forEach((element) => {
         lottie.loadAnimation({
             container: element,
