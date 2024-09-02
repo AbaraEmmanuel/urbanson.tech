@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Abara | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.waves.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+</head>
+<body>
+    <!-- Header Section with Animated Background -->
+    <header id="header">
+        <div id="vanta-bg"></div>
+        <div class="hero-text">
+            <img src="assets/profile.jpg" alt="Emmanuel Abara" class="profile-pic">
+            <h1>Emmanuel Abara</h1>
+            <p>Software Engineer | Open to Work</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate software engineer with a strong background in web development, having graduated from the ALX Software Engineering Program. I excel in building robust web applications and am always eager to tackle new challenges.</p>
+        <ul>
+            <li>Expert in JavaScript, React, Node.js, Python, and more.</li>
+            <li>Open to opportunities in dynamic, fast-paced environments.</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section with Lottie Animations -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="lottie" data-animation-path="assets/lottie/javascript.json"></div>
+                JavaScript
+            </div>
+            <div class="skill-item">
+                <div class="lottie" data-animation-path="assets/lottie/react.json"></div>
+                React
+            </div>
+            <div class="skill-item">
+                <div class="lottie" data-animation-path="assets/lottie/nodejs.json"></div>
+                Node.js
+            </div>
+            <div class="skill-item">
+                <div class="lottie" data-animation-path="assets/lottie/python.json"></div>
+                Python
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="assets/project1.jpg" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Short project description...</p>
+                <a href="https://github.com/your-github-repo" target="_blank" class="cta-button">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Have a question or want to work together?</p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-links">
+            <a href="mailto:emmanuelabara265@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="https://wa.me/09068528533" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+            <a href="https://github.com/your-github" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://twitter.com/your-twitter" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Emmanuel Abara. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
