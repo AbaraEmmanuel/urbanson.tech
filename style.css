@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     transition: background 0.5s ease-in-out;
 }
 
+/* Hero Section */
 #hero {
     display: flex;
     justify-content: center;
@@ -66,6 +68,7 @@ body {
     transform: scale(1.05);
 }
 
+/* Section Styles */
 section {
     padding: 60px 20px;
     color: #ccd6f6;
@@ -82,6 +85,7 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Skills Section */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -99,19 +103,19 @@ section {
     transform: translateY(-10px);
 }
 
-.submit-btn {
-    background-color: #00bcd4;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background 0.3s;
+/* Contact Section */
+.contact-links a {
+    display: block;
+    color: #00bcd4;
+    margin: 5px 0;
+    text-decoration: none;
 }
 
-.submit-btn:hover {
-    background-color: #008ba3;
+.contact-links a:hover {
+    text-decoration: underline;
 }
 
+/* Projects Section */
 .projects-section {
     padding: 60px 20px;
     background: rgba(255, 255, 255, 0.05);
@@ -143,13 +147,42 @@ section {
     text-decoration: underline;
 }
 
-.contact-links a {
-    display: block;
-    color: #00bcd4;
-    margin: 5px 0;
-    text-decoration: none;
+/* Buttons */
+.submit-btn {
+    background-color: #00bcd4;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-.contact-links a:hover {
-    text-decoration: underline;
+.submit-btn:hover {
+    background-color: #008ba3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
 }
