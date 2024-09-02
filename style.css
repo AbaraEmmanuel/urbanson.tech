@@ -161,6 +161,19 @@ section {
     background-color: #008ba3;
 }
 
+/* Form Styles */
+.form-container {
+    width: 640px; /* Fixed width for larger screens */
+    height: auto; /* Adjust height based on content */
+    max-height: 717px; /* Limit maximum height */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding inside the form */
+    box-sizing: border-box; /* Include padding and border in width/height */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-content {
@@ -170,6 +183,11 @@ section {
 
     .profile-pic {
         margin-bottom: 20px;
+    }
+
+    .form-container {
+        width: 90%; /* Adjust width for tablets */
+        max-height: none; /* Remove height restriction for better fit */
     }
 }
 
@@ -184,5 +202,12 @@ section {
 
     .cta-button {
         padding: 8px 16px;
+    }
+
+    .form-container {
+        width: 100%; /* Full width for mobile screens */
+        padding: 10px; /* Reduced padding for smaller screens */
+        box-sizing: border-box; /* Ensure padding is included in width */
+        max-height: none; /* Remove height restriction */
     }
 }
