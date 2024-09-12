@@ -19,6 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mousemove', (event) => {
         const x = (event.clientX / window.innerWidth) * 180; // Full rotation for more variation
         const y = (event.clientY / window.innerHeight) * 50;
-        document.body.style.background = `linear-gradient(${x}deg, #1e3a8a, #4f46e5 ${y}%, #1e3a8a)`;
+        document.body.style.background = `linear-gradient(${x}deg, #003366, #004080 ${y}%, #003366)`;
     });
 });
