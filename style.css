@@ -49,8 +49,8 @@ body {
 
 @media screen and (max-width: 480px) {
     .profile-pic {
-        width: 150px; /* Further adjusted width for very small screens */
-        height: 150px; /* Further adjusted height for very small screens */
+        width: 250px; /* Further adjusted width for very small screens */
+        height: 250px; /* Further adjusted height for very small screens */
     }
 }
 
