@@ -27,15 +27,31 @@ body {
     gap: 40px; /* Increased gap for better spacing */
 }
 
+/* General Styles for Profile Picture */
 .profile-pic {
-    width: 250px; /* Increased width */
-    height: 250px; /* Increased height */
+    width: 250px; /* Default width for larger screens */
+    height: 250px; /* Default height for larger screens */
     border-radius: 50%;
     border: 5px solid #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
     object-position: 0% 0%; /* Cropping from the top of the original photo */
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile-pic {
+        width: 200px; /* Adjusted width for smaller screens */
+        height: 200px; /* Adjusted height for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-pic {
+        width: 150px; /* Further adjusted width for very small screens */
+        height: 150px; /* Further adjusted height for very small screens */
+    }
 }
 
 .hero-text {
