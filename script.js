@@ -19,6 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mousemove', (event) => {
         const x = (event.clientX / window.innerWidth) * 100;
         const y = (event.clientY / window.innerHeight) * 100;
-        document.body.style.background = linear-gradient(${x}deg, #0a192f, #1d2a44);
+        document.body.style.background = `linear-gradient(${x}deg, #0a192f, #1d2a44)`;
     });
 });
