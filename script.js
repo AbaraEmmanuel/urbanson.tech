@@ -32,13 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Dynamic Background Effect
-    document.addEventListener('mousemove', (event) => {
-        const x = (event.clientX / window.innerWidth) * 180; // Full rotation for more variation
-        const y = (event.clientY / window.innerHeight) * 50;
-        document.body.style.background = `linear-gradient(${x}deg, #003366, #004080 ${y}%, #003366)`;
-    });
-
     // Mouse Circle Effect
     const circle = document.createElement('div');
     circle.id = 'mouse-circle';
