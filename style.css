@@ -11,14 +11,16 @@ body {
 /* Mouse Circle Effect */
 #mouse-circle {
     position: absolute;
-    width: 100px; /* Size of the circle */
-    height: 100px; /* Size of the circle */
+    width: 120px; /* Size of the circle */
+    height: 120px; /* Size of the circle */
     border-radius: 50%;
-    border: 2px solid #090066; /* Border color for the circle */
     pointer-events: none; /* Ensure it doesn't interfere with other elements */
     transform: translate(-50%, -50%); /* Center the circle around the pointer */
     opacity: 0.7; /* Adjust opacity as needed */
+    background: radial-gradient(circle, rgba(160, 153, 0, 0.8) 0%, rgba(160, 153, 0, 0) 70%);
+    /* Radial gradient to create a smooth color transition */
 }
+
 
 /* Hero Section */
 #hero {
