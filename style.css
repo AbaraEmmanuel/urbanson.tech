@@ -28,9 +28,10 @@ body {
 }
 
 /* General Styles for Profile Picture */
+/* General Styles for Profile Picture */
 .profile-pic {
-    width: 250px; /* Default width for larger screens */
-    height: 250px; /* Default height for larger screens */
+    width: 350px; /* Increased width for larger screens */
+    height: 350px; /* Increased height for larger screens */
     border-radius: 50%;
     border: 5px solid #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -42,8 +43,8 @@ body {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .profile-pic {
-        width: 250px; /* Adjusted width for smaller screens */
-        height: 250px; /* Adjusted height for smaller screens */
+        width: 300px; /* Adjusted width for smaller screens */
+        height: 300px; /* Adjusted height for smaller screens */
     }
 }
 
@@ -53,6 +54,7 @@ body {
         height: 250px; /* Further adjusted height for very small screens */
     }
 }
+
 
 .hero-text {
     display: flex;
