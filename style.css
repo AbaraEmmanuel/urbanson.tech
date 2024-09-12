@@ -24,15 +24,15 @@ body {
     display: flex;
     align-items: center;
     text-align: left;
-    gap: 20px;
+    gap: 40px; /* Increased gap for better spacing */
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
     border-radius: 50%;
-    border: 3px solid #ffffff44;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    border: 4px solid #ffffff44;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow for prominence */
 }
 
 .hero-text {
@@ -42,165 +42,140 @@ body {
 }
 
 .name {
-    font-size: 3.5rem;
+    font-size: 4rem; /* Increased font size for emphasis */
     font-weight: 700;
     color: #ffcc00;
     text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
 }
 
 .tagline {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #bbdefb;
 }
 
 .cta-button {
     background: linear-gradient(135deg, #00bcd4, #0097a7);
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
+    border-radius: 25px;
     cursor: pointer;
-    border-radius: 8px;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
 }
 
 .cta-button:hover {
     background: linear-gradient(135deg, #0097a7, #00bcd4);
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* About Section */
 #about {
-    padding: 4rem 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
     max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .glass-card {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    backdrop-filter: blur(10px);
 }
 
-.glass-card h2 {
-    margin-top: 0;
-    color: #ffcc00;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 /* Skills Section */
 #skills {
-    padding: 4rem 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    margin: 0 auto;
-    max-width: 800px;
+    background: #0a192f;
+    padding: 60px 20px;
+    color: #c7d8ed;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     text-align: center;
-    color: #ffffff;
-}
-
-.skill-item .lottie {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
 }
 
 /* Projects Section */
 #projects {
-    padding: 4rem 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    margin: 0 auto;
-    max-width: 800px;
+    padding: 60px 20px;
+    background: #1d2a44;
+    color: #cfd8dc;
 }
 
 .project {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .project h3 {
+    font-size: 2rem;
     color: #ffcc00;
 }
 
 /* Contact Section */
 #contact {
-    padding: 4rem 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    margin: 0 auto;
-    max-width: 800px;
+    padding: 60px 20px;
+    background: #0a192f;
+    color: #c7d8ed;
+    text-align: center;
 }
 
 .contact-links a {
     display: block;
-    color: #00bcd4;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    color: #bbdefb;
     text-decoration: none;
-}
-
-.contact-links a:hover {
-    text-decoration: underline;
+    font-weight: 500;
 }
 
 .message-btn {
     display: inline-block;
-    background: #ff5722;
-    color: white;
     padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-transform: uppercase;
+    background: linear-gradient(135deg, #00bcd4, #0097a7);
+    color: white;
+    border-radius: 25px;
+    transition: 0.3s;
     text-decoration: none;
-    transition: background 0.3s, transform 0.3s;
 }
 
 .message-btn:hover {
-    background: #e64a19;
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #0097a7, #00bcd4);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero-content {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
-    
+
     .profile-pic {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
     }
-    
+
     .name {
-        font-size: 2.5rem;
-    }
-    
-    .cta-button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        font-size: 3rem;
     }
 }
