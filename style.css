@@ -40,21 +40,6 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .profile-pic {
-        width: 500px; /* Adjusted width for smaller screens */
-        height: 500px; /* Adjusted height for smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .profile-pic {
-        width: 450px; /* Further adjusted width for very small screens */
-        height: 450px; /* Further adjusted height for very small screens */
-    }
-}
-
 
 .hero-text {
     display: flex;
@@ -192,8 +177,8 @@ ul {
     }
 
     .profile-pic {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 
     .name {
