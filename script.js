@@ -45,3 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
         circle.style.top = `${mouseY}px`;
     });
 });
+
