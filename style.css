@@ -28,13 +28,13 @@ body {
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 250px; /* Increased width */
+    height: 250px; /* Increased height */
     border-radius: 50%;
     border: 5px solid #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
-    object-position: 50% 20%; /* Focuses on the head and shoulders */
+    object-position: 0% 0%; /* Cropping from the top of the original photo */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
