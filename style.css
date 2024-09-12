@@ -43,15 +43,15 @@ body {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .profile-pic {
-        width: 300px; /* Adjusted width for smaller screens */
-        height: 300px; /* Adjusted height for smaller screens */
+        width: 500px; /* Adjusted width for smaller screens */
+        height: 500px; /* Adjusted height for smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
     .profile-pic {
-        width: 250px; /* Further adjusted width for very small screens */
-        height: 250px; /* Further adjusted height for very small screens */
+        width: 450px; /* Further adjusted width for very small screens */
+        height: 450px; /* Further adjusted height for very small screens */
     }
 }
 
