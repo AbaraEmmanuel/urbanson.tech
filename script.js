@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dynamic Background Effect
     document.addEventListener('mousemove', (event) => {
-        const x = (event.clientX / window.innerWidth) * 100;
+        const x = (event.clientX / window.innerWidth) * 360; // Full rotation for more variation
         const y = (event.clientY / window.innerHeight) * 100;
-        document.body.style.background = `linear-gradient(${x}deg, #0a192f, #1d2a44)`;
+        document.body.style.background = `linear-gradient(${x}deg, #1e3a8a, #4f46e5 ${y}%, #1e3a8a)`;
     });
 });
