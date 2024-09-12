@@ -42,8 +42,8 @@ body {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .profile-pic {
-        width: 200px; /* Adjusted width for smaller screens */
-        height: 200px; /* Adjusted height for smaller screens */
+        width: 250px; /* Adjusted width for smaller screens */
+        height: 250px; /* Adjusted height for smaller screens */
     }
 }
 
