@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Mouse Circle Effect
+    // Mouse pointer Effect
     const circle = document.createElement('div');
     circle.id = 'mouse-circle';
     document.body.appendChild(circle);
