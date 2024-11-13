@@ -9,6 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
@@ -90,34 +92,59 @@
             <p>
                 GrooveTunes is a modern online music player designed to offer an engaging and seamless music experience. Built with JavaScript, React, and Node.js, it features robust functionalities such as play, pause, skip, forward, rewind, and a sleek, customizable interface.
             </p>
-            <p>
-                Check out the application and experience the music: <a href="https://groove-tunes.vercel.app/" target="_blank">GrooveTunes</a>
-            </p>
+            <p><a href="https://groove-tunes.vercel.app/" target="_blank" class="custom-link">Explore GrooveTunes →</a></p>
         </div>
         <div class="project">
             <h3>eXquisite</h3>
             <p>
                 eXquisite is a premier catering service with a decade-long tradition of delivering exceptional indoor and outdoor catering experiences. Our services include home delivery, event catering, and corporate catering, all prepared with the freshest ingredients.
             </p>
+            <p><a href="https://exquisite.urbanson.tech/"  target="_blank" class="custom-link">Visit eXquiste→</a></p>
+        </div>
+        <div class="project">
+            <h4>PrimeBizPro</h4>
             <p>
-                Explore our diverse menu and find out how we can make your next event extraordinary: <a href="https://exquisite.urbanson.tech/" target="_blank">eXquisite</a>
+                PrimeBizPro website offers business services like virtual assistance and consultations aimed at supporting business growth. It focuses on handling essential tasks for businesses so owners can concentrate on expanding their ventures.
             </p>
+            <p><a href="https://prime-biz-pro.vercel.app/" target="_blank" class="custom-link">Visit PrimeBizPro →</a></p>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out through the following channels:</p>
-        <div class="contact-links">
-            <a href="mailto:emmanuelabara265@gmail.com">Email: emmanuelabara265@gmail.com</a>
-            <a href="https://github.com/AbaraEmmanuel" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/emmanuel-abara-856829267/" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/AbaraEmmanuel7" target="_blank">Twitter</a>
+    
+    <footer>
+        <div class="contact-section" id="contact">
+            <h2>Contact Me</h2>
+            <section id="contact">
+                <div class="contact-links">
+                    <a href="mailto:emmanuelabara265@gmail.com">
+                        <i class="fas fa-envelope"></i> Email: emmanuelabara265@gmail.com
+                    </a>                    <a href="https://github.com/AbaraEmmanuel" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/emmanuel-abara-856829267/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://twitter.com/AbaraEmmanuel7" target="_blank">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>                
+                </div>
+            </section>
+            <div class="glass-card">
+            <p>I'd love to hear from you! Please fill out the form below and I'll get back to you shortly.</p>
+            <form action="https://formspree.io/f/mldenwvk" method="POST" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+            </form>
         </div>
-        <h3>Send Me a Message</h3>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScnnufJ8cKuSJ-qw6hrSJ992fAwXy3D4eiyZLOTF_rSNtb0pg/viewform?embedded=true" class="message-btn" target="_blank">Send a Quick Message</a>
-    </section>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
