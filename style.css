@@ -71,22 +71,40 @@ body {
     color: #bbdefb;
 }
 
-.cta-button {
+.button-3d {
     width: 200px;
-    background: linear-gradient(135deg, #00bcd4, #0097a7);
-    color: white;
+    background: linear-gradient(135deg, #0097a7, #00bcd4);
+    color: #fff;
     padding: 10px 20px;
     font-size: 1.2rem;
-    border: 2px solid #ffcc00;
-    border-radius: 25px;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
-    transition: background 0.3s;
+    box-shadow: 0 4px #ffcc00;
+    transition: transform 0.1s;
 }
 
-.cta-button:hover {
-    background: linear-gradient(135deg, #0097a7, #00bcd4);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
+.button-3d:active {
+    transform: translateY(6px);
+    box-shadow: 0 3px white;
+  }
+
+  .button-neon {
+    background: #141414;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .button-neon:hover {
+    box-shadow: 0 0 20px #ffcc00, 0 0 15px #00eaff, 0 0 30px #00eaff;
+  }
+  
 
 /* About Section */
 #about {
@@ -258,7 +276,8 @@ ul {
 
 .contact-form button:hover {
     background-color: #0056b3;
-}
+}  
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -291,3 +310,4 @@ ul {
         padding-left: 10px;
     }
 }
+
