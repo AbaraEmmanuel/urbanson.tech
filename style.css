@@ -195,16 +195,25 @@ ul {
     text-align: center;
 }
 
+.contact-links {
+    display: flex; /* Enables horizontal layout */
+    justify-content: center; /* Centers the links horizontally */
+    gap: 20px; /* Adds spacing between the links */
+}
+
 .contact-links a {
-    display: block;
-    margin: 10px 0;
-    margin-top: -40px;
-    margin-bottom: -40px;
     color: #bbdefb;
     text-decoration: none;
     font-weight: 500;
-    padding: 30px;
+    padding: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
 }
+
+.contact-links a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
 
 .message-btn {
     display: inline-block;
