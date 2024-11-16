@@ -203,10 +203,10 @@ ul {
 .contact-links a {
     color: #bbdefb;
     text-decoration: none;
-    font-weight: 500;
-    padding: 10px;
-    font-size: 22px;
-    transition: color 0.3s ease;
+    /*font-weight: 500;*/
+    padding: 5px;
+    font-size: 21px;
+    transition: color 0s ease;
 }
 
 .contact-links a:hover {
@@ -244,7 +244,7 @@ ul {
 
 .contact-section p {
     margin-bottom: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #c7d8ed;
 }
 
