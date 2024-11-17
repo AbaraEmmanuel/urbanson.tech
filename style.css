@@ -492,5 +492,9 @@ ul {
     .profile-pic {
         margin-top: 10000px;
     }
-  }
+    
+    .hero-content {
+        margin-top: 20px;
+    }
+}
   
