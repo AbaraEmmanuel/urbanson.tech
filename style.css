@@ -489,9 +489,10 @@ ul {
 }
 
 @media screen and (max-width: 2000px) {
-    /*.profile-pic {
-        margin-top: 1000px;
-    }*/
+
+    .button-3d {
+        font-size: 0.8rem;
+    }
     .short-intro {
         padding: 20px;
         margin-top: 30px;
