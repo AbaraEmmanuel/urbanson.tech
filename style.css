@@ -163,13 +163,65 @@ ul {
     padding: 0;
 }
 
-/* Skills Section */
+
+#skills {
+    padding: 20px;
+    background: #0a192f;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #cfd8dc;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .skills-category {
+    text-align: left;
+    max-width: 300px;
+  }
+  
+  .skills-category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #cfd8dc;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li {
+    font-size: 18px;
+    color: #cfd8dc;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  
+  .skills-list li:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+
+/* Skills Section 
 #skills {
     background: #0a192f;
     padding: 60px 20px;
     color: #c7d8ed;
-}
-
+}  
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -183,7 +235,7 @@ ul {
     align-items: center;
     padding: 10px;
     text-align: center;
-}
+} */
 
 /* Projects Section */
 #projects {
@@ -217,6 +269,56 @@ ul {
 .custom-link:hover {
     color: #ffcc00;
 }
+#certificates {
+    padding: 50px 20px;
+    background: #0a192f;
+    color: #cfd8dc;
+    font-family: 'Arial', sans-serif; /* Modern font family */
+    line-height: 1.6; /* Improved readability */
+    border-radius: 8px; /* Soft edges for a cleaner look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+#certificates h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    text-align: center; /* Center the heading for a structured layout */
+    color: #f0f4f8; /* Slightly lighter color for contrast */
+    border-bottom: 2px solid #0073e6; /* Highlight the section title */
+    padding-bottom: 10px;
+}
+
+#certificates ul {
+    padding: 0;
+    list-style: none; /* Remove default list style */
+}
+
+#certificates li {
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.05); /* Subtle background highlight */
+    padding: 10px 15px;
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#certificates li:hover {
+    background: rgba(255, 255, 255, 0.1); /* Slightly more prominent hover effect */
+}
+
+#certificates a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold; /* Emphasize links */
+    font-size: 18px; /* Slightly larger text for emphasis */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+#certificates a:hover {
+    color: #1e90ff; /* Brighten link color on hover */
+    text-decoration: underline;
+}
+
+  
 
 /* Contact Section */
 #contact {
