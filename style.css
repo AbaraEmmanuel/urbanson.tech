@@ -494,6 +494,12 @@ ul {
         font-size: 1rem;
         padding: 10px;
     }
+
+    .button-neon {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    
     .short-intro {
         padding: 20px;
         margin-top: 30px;
