@@ -489,12 +489,12 @@ ul {
 }
 
 @media screen and (max-width: 2000px) {
-    .profile-pic {
-        margin-top: 10000px;
-    }
+    /*.profile-pic {
+        margin-top: 1000px;
+    }*/
     
     .hero-content {
-        margin-top: 10000px;
+        margin-top: 50px;
     }
 }
   
