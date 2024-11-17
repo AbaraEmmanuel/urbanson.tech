@@ -504,7 +504,7 @@ ul {
     .cta-buttons { /* Add this class to the container wrapping your buttons */
         display: flex; /* Ensure buttons are aligned horizontally */
         justify-content: center; /* Keep them centered */
-        margin-left: -1px; /* Shift the buttons slightly to the left */
+        margin-left: 3px; /* Shift the buttons slightly to the left */
     }
     
     .cta-buttons button { /* Optional: fine-tune button styles */
