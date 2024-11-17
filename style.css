@@ -516,7 +516,7 @@ ul {
     }
     
     .cta-buttons button { /* Optional: fine-tune button styles */
-        margin-top: 20px; /* Maintain some spacing between the buttons */
+        margin-top: 200px; /* Maintain some spacing between the buttons */
     }
 
     .tagline {
