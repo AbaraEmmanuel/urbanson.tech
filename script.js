@@ -1,4 +1,7 @@
 // GSAP Animations
+if (window.innerWidth > 2000) {
+    // The rest of your script.js code goes here
+  
 document.addEventListener('DOMContentLoaded', () => {
     // GSAP Animations for different elements
     gsap.from(".profile-pic", {
@@ -45,4 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
         circle.style.top = `${mouseY}px`;
     });
 });
-
+}
