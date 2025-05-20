@@ -232,13 +232,12 @@ img {
   position: relative;
 }
 
-* Update the profile picture styling to crop it like a passport photo */
 .profile-pic {
   width: 320px;
   height: 320px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 30%; /* Adjust to focus on face area */
+  object-position: center top; /* This crops to show the top part of the image (face area) */
   border: 5px solid var(--primary);
   box-shadow: 0 0 30px rgba(74, 108, 247, 0.5);
   transition: var(--transition);
