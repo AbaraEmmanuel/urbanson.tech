@@ -232,11 +232,13 @@ img {
   position: relative;
 }
 
+* Update the profile picture styling to crop it like a passport photo */
 .profile-pic {
   width: 320px;
   height: 320px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 30%; /* Adjust to focus on face area */
   border: 5px solid var(--primary);
   box-shadow: 0 0 30px rgba(74, 108, 247, 0.5);
   transition: var(--transition);
@@ -783,8 +785,11 @@ img {
   padding-bottom: 6rem;
 }
 
+/* Fix transcript and volunteer award images for small screens */
 .transcript-img {
-  max-width: 600px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   border-radius: var(--border-radius-lg);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transition: var(--transition);
