@@ -116,6 +116,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   );
   
+  // Wrap transcript and volunteer images in container for better mobile display
+  const transcriptImages = document.querySelectorAll('.transcript-img');
+  transcriptImages.forEach(img => {
+    // Only wrap if not already wrapped
+    if (!img.parentElement.classList.contains('transcript-img-container')) {
+      const container = document.createElement('div');
+      container.className = 'transcript-img-container';
+      container.style.maxWidth = '100%';
+      container.style.overflow = 'auto';
+      container.style.WebkitOverflowScrolling = 'touch';
+      container.style.margin = '0 auto';
+      
+      img.parentNode.insertBefore(container, img);
+      container.appendChild(img);
+    }
+  });
+  
   // Animate transcript and volunteer images
   const images = document.querySelectorAll('.transcript-img');
   images.forEach(img => {
