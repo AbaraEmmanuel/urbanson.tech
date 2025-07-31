@@ -1184,3 +1184,239 @@ img {
     font-size: 1.2rem;
   }
 }
+
+/* Add revamped tag styling */
+.revamped-tag {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  margin-left: 0.8rem;
+  vertical-align: middle;
+  position: relative;
+  top: -0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Animation for the revamped tag */
+@keyframes revamped-pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.revamped-tag {
+  animation: revamped-pulse 2s infinite;
+}
+
+/* Add spacing between projects */
+.project {
+  margin-bottom: 2.5rem;
+}
+
+/* Add subtle hover effect to project cards */
+.project:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  border-left: 5px solid var(--secondary);
+}
+
+/* Early project styling */
+.early-project {
+  background: #f8f9fc;
+  border-left: 5px solid #64748b;
+  opacity: 0.9;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-date {
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-style: italic;
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.features-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.features-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+.linkedin-embed {
+  margin-top: 1.5rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.linkedin-embed iframe {
+  width: 100%;
+  max-width: 504px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-header {
+    flex-direction: column;
+  }
+  
+  .project-date {
+    margin-top: 0.5rem;
+  }
+  
+  .linkedin-embed iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linkedin-embed iframe {
+    height: 300px;
+  }
+}
+
+/* To-Do List Project Styling */
+.project-content {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.terminal-screenshot {
+  flex: 1;
+  min-width: 300px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  background: #1e1e1e;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #333;
+}
+
+.terminal-prompt {
+  padding: 1rem;
+  background: #1e1e1e;
+  color: #4af74a;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.prompt-user {
+  color: #87ceeb;
+  font-weight: bold;
+}
+
+.prompt-path {
+  color: #da70d6;
+}
+
+.prompt-command {
+  color: #f8f8f2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-content {
+    flex-direction: column;
+  }
+}
+
+/* GitHub Button Styling */
+.github-link {
+  margin-top: 1.5rem;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #333;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.github-button:hover {
+  background: #444;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.github-button i {
+  font-size: 1.2rem;
+}
+
+/* Terminal styling enhancements */
+.terminal-screenshot {
+  position: relative;
+  transition: var(--transition);
+}
+
+.terminal-screenshot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#scrollToTop:hover {
+  background-color: #333;
+}
