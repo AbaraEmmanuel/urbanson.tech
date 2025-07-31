@@ -119,6 +119,204 @@
     <a href="https://prime-biz-pro.vercel.app/" class="custom-link" target="_blank">Try PrimeBizPro →</a>
   </div>
 
+  <div class="project">
+  <div class="project-header">
+    <h3>Crypto Giveaway Anti-Cheat Bot</h3>
+    <span class="project-date">July 2024</span>
+  </div>
+  
+  <div class="project-content">
+    <div class="project-description">
+      <p>A sophisticated Telegram bot for managing cryptocurrency giveaways with anti-cheat measures and automated administration.</p>
+      
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">Telegram API</span>
+        <span class="tech-pill">Firebase</span>
+        <span class="tech-pill">Crypto</span>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-user-shield"></i>
+          <h4>User Submission</h4>
+          <ul>
+            <li>/submit wallet_address</li>
+            <li>42-hour cooldown</li>
+            <li>Firebase storage</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-user-cog"></i>
+          <h4>Admin Tools</h4>
+          <ul>
+            <li>/winners command</li>
+            <li>Full winner history</li>
+            <li>Access restricted</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-broom"></i>
+          <h4>Auto-Cleanup</h4>
+          <ul>
+            <li>Daily at 3AM UTC</li>
+            <li>Expires old records</li>
+            <li>DB optimization</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-bell"></i>
+          <h4>Real-Time Alerts</h4>
+          <ul>
+            <li>Moderator notifications</li>
+            <li>Submission details</li>
+            <li>Win tracking</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="project-links">
+        <a href="https://github.com/AbaraEmmanuel/anti-cheat.bot" 
+           target="_blank" 
+           class="github-button">
+          <i class="fab fa-github"></i> View Source
+        </a>
+        <span class="security-note">
+          <i class="fas fa-lock"></i> Note: Displayed credentials are non-functional examples
+        </span>
+      </div>
+    </div>
+    
+    <div class="project-visuals">
+      <div class="database-structure">
+        <h4>Database Structure:</h4>
+        <pre><code>"winners": {
+  "123456789": {
+    "username": "john_doe",
+    "wins": 3,
+    "addresses": ["0xabc...", "0xdef..."],
+    "win_dates": ["2025-07-28", "2025-07-30"],
+    "last_submission": "2025-07-30 14:22:05"
+  }
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project">
+  <div class="project-header">
+    <h3>Telegram AI Chatbot with Together AI</h3>
+    <span class="project-date">August 2024</span>
+  </div>
+  
+  <div class="project-content">
+    <div class="project-description">
+      <p>A sophisticated AI chatbot bridging Telegram with Together AI's Llama-Vision-Free model, featuring dual deployment options.</p>
+      
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">Telegram API</span>
+        <span class="tech-pill">Together AI</span>
+        <span class="tech-pill">Flask</span>
+        <span class="tech-pill">LLM</span>
+      </div>
+      
+      <div class="architecture">
+        <h4>System Architecture:</h4>
+        <div class="architecture-diagram">
+          <div class="arch-component user">
+            <i class="fas fa-user"></i>
+            <span>Telegram User</span>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-component bot">
+            <i class="fas fa-robot"></i>
+            <span>Python Bot</span>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-component ai">
+            <i class="fas fa-brain"></i>
+            <span>Together AI</span>
+          </div>
+          <div class="arch-arrow">↔</div>
+          <div class="arch-component webhook">
+            <i class="fas fa-server"></i>
+            <span>Flask Webhook</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-comment-alt"></i>
+          <h4>Core Features</h4>
+          <ul>
+            <li>/start command handler</li>
+            <li>Natural language processing</li>
+            <li>Dynamic AI responses</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-cogs"></i>
+          <h4>AI Integration</h4>
+          <ul>
+            <li>Llama-Vision-Free model</li>
+            <li>Configurable parameters</li>
+            <li>System prompt control</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-network-wired"></i>
+          <h4>Deployment Options</h4>
+          <ul>
+            <li>Polling (default)</li>
+            <li>Flask webhook</li>
+            <li>Cloud-ready</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Security</h4>
+          <ul>
+            <li>Environment variables</li>
+            <li>API key protection</li>
+            <li>Debug logging</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="code-snippet">
+        <h4>Key Configuration:</h4>
+        <pre><code># Together AI Parameters
+MODEL_NAME = "togethercomputer/llama-2-7b-chat"
+TEMPERATURE = 0.7  # Creativity control
+MAX_TOKENS = 256   # Response length limit
+
+# System Prompt
+SYSTEM_PROMPT = "You are a helpful chatbot"</code></pre>
+      </div>
+      
+      <div class="project-links">
+        <a href="https://github.com/AbaraEmmanuel/Telegram-chatbot" 
+           target="_blank" 
+           class="github-button">
+          <i class="fab fa-github"></i> View Source
+        </a>
+        <span class="security-note">
+          <i class="fas fa-key"></i> Secures tokens via .env file
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Add this at the end of your projects section -->
   <div class="project early-project">
     <div class="project-header">
