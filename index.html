@@ -206,117 +206,117 @@
       </div>
     </div>
   </div>
+</div>
 
+<div class="project">
+  <div class="project-header">
+    <h3>Telegram AI Chatbot with Together AI</h3>
+    <span class="project-date">August 2024</span>
+  </div>
+  
+  <div class="project-content">
+    <div class="project-description">
+      <p>A sophisticated AI chatbot bridging Telegram with Together AI's Llama-Vision-Free model, featuring dual deployment options.</p>
+      
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">Telegram API</span>
+        <span class="tech-pill">Together AI</span>
+        <span class="tech-pill">Flask</span>
+        <span class="tech-pill">LLM</span>
+      </div>
+      
+      <div class="architecture">
+        <h4>System Architecture:</h4>
+        <div class="architecture-diagram">
+          <div class="arch-component user">
+            <i class="fas fa-user"></i>
+            <span>Telegram User</span>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-component bot">
+            <i class="fas fa-robot"></i>
+            <span>Python Bot</span>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-component ai">
+            <i class="fas fa-brain"></i>
+            <span>Together AI</span>
+          </div>
+          <div class="arch-arrow">↔</div>
+          <div class="arch-component webhook">
+            <i class="fas fa-server"></i>
+            <span>Flask Webhook</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-comment-alt"></i>
+          <h4>Core Features</h4>
+          <ul>
+            <li>/start command handler</li>
+            <li>Natural language processing</li>
+            <li>Dynamic AI responses</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-cogs"></i>
+          <h4>AI Integration</h4>
+          <ul>
+            <li>Llama-Vision-Free model</li>
+            <li>Configurable parameters</li>
+            <li>System prompt control</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-network-wired"></i>
+          <h4>Deployment Options</h4>
+          <ul>
+            <li>Polling (default)</li>
+            <li>Flask webhook</li>
+            <li>Cloud-ready</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Security</h4>
+          <ul>
+            <li>Environment variables</li>
+            <li>API key protection</li>
+            <li>Debug logging</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="code-snippet">
+        <h4>Key Configuration:</h4>
+        <pre><code># Together AI Parameters
+            MODEL_NAME = "togethercomputer/llama-2-7b-chat"
+            TEMPERATURE = 0.7  # Creativity control
+            MAX_TOKENS = 256   # Response length limit
 
-  <div class="project">
-    <div class="project-header">
-      <h3>Telegram AI Chatbot with Together AI</h3>
-      <span class="project-date">August 2024</span>
-    </div>
-    
-    <div class="project-content">
-      <div class="project-description">
-        <p>A sophisticated AI chatbot bridging Telegram with Together AI's Llama-Vision-Free model, featuring dual deployment options.</p>
-        
-        <div class="tech-stack">
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">Telegram API</span>
-          <span class="tech-pill">Together AI</span>
-          <span class="tech-pill">Flask</span>
-          <span class="tech-pill">LLM</span>
-        </div>
-        
-        <div class="architecture">
-          <h4>System Architecture:</h4>
-          <div class="architecture-diagram">
-            <div class="arch-component user">
-              <i class="fas fa-user"></i>
-              <span>Telegram User</span>
-            </div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-component bot">
-              <i class="fas fa-robot"></i>
-              <span>Python Bot</span>
-            </div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-component ai">
-              <i class="fas fa-brain"></i>
-              <span>Together AI</span>
-            </div>
-            <div class="arch-arrow">↔</div>
-            <div class="arch-component webhook">
-              <i class="fas fa-server"></i>
-              <span>Flask Webhook</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="features-grid">
-          <div class="feature-card">
-            <i class="fas fa-comment-alt"></i>
-            <h4>Core Features</h4>
-            <ul>
-              <li>/start command handler</li>
-              <li>Natural language processing</li>
-              <li>Dynamic AI responses</li>
-            </ul>
-          </div>
-          
-          <div class="feature-card">
-            <i class="fas fa-cogs"></i>
-            <h4>AI Integration</h4>
-            <ul>
-              <li>Llama-Vision-Free model</li>
-              <li>Configurable parameters</li>
-              <li>System prompt control</li>
-            </ul>
-          </div>
-          
-          <div class="feature-card">
-            <i class="fas fa-network-wired"></i>
-            <h4>Deployment Options</h4>
-            <ul>
-              <li>Polling (default)</li>
-              <li>Flask webhook</li>
-              <li>Cloud-ready</li>
-            </ul>
-          </div>
-          
-          <div class="feature-card">
-            <i class="fas fa-shield-alt"></i>
-            <h4>Security</h4>
-            <ul>
-              <li>Environment variables</li>
-              <li>API key protection</li>
-              <li>Debug logging</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="code-snippet">
-          <h4>Key Configuration:</h4>
-          <pre><code># Together AI Parameters
-              MODEL_NAME = "togethercomputer/llama-2-7b-chat"
-              TEMPERATURE = 0.7  # Creativity control
-              MAX_TOKENS = 256   # Response length limit
-
-              # System Prompt
-              SYSTEM_PROMPT = "You are a helpful chatbot"</code></pre>
-        </div>
-        
-        <div class="project-links">
-          <a href="https://github.com/AbaraEmmanuel/Telegram-chatbot" 
-            target="_blank" 
-            class="github-button">
-            <i class="fab fa-github"></i> View Source
-          </a>
-          <span class="security-note">
-            <i class="fas fa-key"></i> Secures tokens via .env file
-          </span>
-        </div>
+            # System Prompt
+            SYSTEM_PROMPT = "You are a helpful chatbot"</code></pre>
+      </div>
+      
+      <div class="project-links">
+        <a href="https://github.com/AbaraEmmanuel/Telegram-chatbot" 
+           target="_blank" 
+           class="github-button">
+          <i class="fab fa-github"></i> View Source
+        </a>
+        <span class="security-note">
+          <i class="fas fa-key"></i> Secures tokens via .env file
+        </span>
       </div>
     </div>
   </div>
+</div>
 
   <!-- Add this at the end of your projects section -->
   <div class="project early-project">
